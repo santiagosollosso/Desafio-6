@@ -1,0 +1,97 @@
+@font-face {
+    /* definir como vamos a llamar a esta fuente de aquí en adelante */
+    font-family: roboto-parrafos;
+    /* define donde se encuentra el archivo de la fuente /url */
+    src: url('Roboto fonts/roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: roboto-encabezado;
+    src: url('roboto fonts/roboto/Roboto-Black.ttf');
+}
+
+/* html o :root */
+:root {
+    /* variable */
+    --color-home-navbar: rgb(255, 255, 255);
+    --color-bordes: 4px solid green;
+
+    --size-encabezados: 44px;
+}
+
+.text-inform{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.logo{
+    width: 200px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+.otros-servicios{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    align-content: center;
+}
+
+
+.img-anim:hover{
+    transform: scale(1.1);
+}
+.img-anim{
+    transition: transform 1s
+}
+
+
+
+/* unidades de medida */
+/* unidades absolutas son un tipo de medida fija que no cambia ni depende de otro factor. Son ideales cuando el contexto no varia*/
+
+p{
+    font-size: 18px;
+    
+}
+
+html {
+    border-bottom: 30px;
+    font-size: 18px; /* tamaño base - root */
+}
+
+a {
+    border-right:10px;
+    margin: 5px;
+    font-size: 1rem;
+    
+}
+
+.fixed{
+    position: fixed;
+    bottom: 1rem;
+    right: 0;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.rss {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.fav{
+    padding-top: 10%;
+    width: 4rem
+}
